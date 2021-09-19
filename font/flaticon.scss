@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?cea90e3ef0201c6fba51ac2d08b319b3") format("truetype"),
+url("./flaticon.woff?cea90e3ef0201c6fba51ac2d08b319b3") format("woff"),
+url("./flaticon.woff2?cea90e3ef0201c6fba51ac2d08b319b3") format("woff2"),
+url("./flaticon.eot?cea90e3ef0201c6fba51ac2d08b319b3#iefix") format("embedded-opentype"),
+url("./flaticon.svg?cea90e3ef0201c6fba51ac2d08b319b3#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "man-exercising-with-dumbbell": "\f101",
+    "bike": "\f102",
+    "chin-up-bar": "\f103",
+    "bicycle": "\f104",
+    "buddhist-yoga-pose": "\f105",
+    "boxing-fighter": "\f106",
+    "man-exercising-back-and-legs": "\f107",
+    "olympic-weightlifting": "\f108",
+    "lose-weight": "\f109",
+    "skipping-rope": "\f10a",
+);
+
+.flaticon-man-exercising-with-dumbbell:before {
+    content: map-get($flaticon-map, "man-exercising-with-dumbbell");
+}
+.flaticon-bike:before {
+    content: map-get($flaticon-map, "bike");
+}
+.flaticon-chin-up-bar:before {
+    content: map-get($flaticon-map, "chin-up-bar");
+}
+.flaticon-bicycle:before {
+    content: map-get($flaticon-map, "bicycle");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-boxing-fighter:before {
+    content: map-get($flaticon-map, "boxing-fighter");
+}
+.flaticon-man-exercising-back-and-legs:before {
+    content: map-get($flaticon-map, "man-exercising-back-and-legs");
+}
+.flaticon-olympic-weightlifting:before {
+    content: map-get($flaticon-map, "olympic-weightlifting");
+}
+.flaticon-lose-weight:before {
+    content: map-get($flaticon-map, "lose-weight");
+}
+.flaticon-skipping-rope:before {
+    content: map-get($flaticon-map, "skipping-rope");
+}
